@@ -1,6 +1,6 @@
 # SQL-Project
 
-## Kaggle Dataset - ### https://www.kaggle.com/datasets/minalchoudhary/online-retail-dataset ###
+## Kaggle Dataset - https://www.kaggle.com/datasets/minalchoudhary/online-retail-dataset.
 
 # **E-Commerce Retail Sales Analysis Using SQL**
 
