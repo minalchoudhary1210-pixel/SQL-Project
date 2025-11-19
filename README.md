@@ -6,7 +6,7 @@ This project showcases a complete, end-to-end SQL workflow built on a real-world
 
 ---
 
-## ** Project Overview**
+## Project Overview
 
 The analysis uses invoice-level online retail data containing customer information, product descriptions, quantities, timestamps, and country details.
 The project focuses on:
@@ -20,7 +20,7 @@ The project focuses on:
 
 ---
 
-## ** Objectives**
+## Objectives
 
 * Build a robust SQL database for raw and cleaned datasets
 * Perform complete data cleaning (duplicates, missing entries, invalid formats)
@@ -31,7 +31,7 @@ The project focuses on:
 
 ---
 
-## ** Dataset Description**
+## Dataset Description
 
 The dataset contains real e-commerce retail transactions. Key fields:
 
@@ -50,7 +50,7 @@ Includes both valid and cancelled orders; returns were handled separately during
 
 ---
 
-## ** SQL Data Cleaning Workflow**
+## SQL Data Cleaning Workflow
 
 **Step 1:** Remove exact duplicate rows
 **Step 2:** Drop missing product descriptions and invalid/non-positive prices
@@ -65,32 +65,32 @@ TotalPrice = Quantity * Price
 
 ---
 
-## ** SQL Analysis Performed**
+## SQL Analysis Performed
 
-### **Sales Metrics**
+### Sales Metrics
 
 * Total revenue, total quantity sold
 * Unique invoice count
 * Monthly/seasonal revenue trends
 
-### **Product Analysis**
+### Product Analysis
 
 * Best-selling products
 * Items generating highest revenue
 * Most returned items
 
-### **Customer Analysis**
+### Customer Analysis
 
 * Highest revenue customers
 * Purchase frequency and retention patterns
 * Average Order Value (AOV)
 
-### **Market Insights**
+### Market Insights
 
 * Country-wise revenue distribution
 * Comparison of UK vs international markets
 
-### **Advanced SQL Used**
+### Advanced SQL Used
 
 * Window functions (RANK, ROW_NUMBER, cumulative sums)
 * CTEs for modular logic
@@ -99,16 +99,16 @@ TotalPrice = Quantity * Price
 
 ---
 
-## ** Key SQL Queries**
+## Key SQL Queries
 
-### **1. Total Revenue**
+### 1. Total Revenue
 
 ```sql
 SELECT SUM(TotalPrice)
 FROM online_retail_clean;
 ```
 
-### **2. Monthly Sales Trend**
+### 2. Monthly Sales Trend
 
 ```sql
 SELECT DATE_FORMAT(InvoiceDate_clean, '%Y-%m') AS Month, 
@@ -118,7 +118,7 @@ GROUP BY Month
 ORDER BY Month;
 ```
 
-### **3. Top Revenue-Generating Products**
+### 3. Top Revenue-Generating Products
 
 ```sql
 SELECT Description, SUM(TotalPrice) AS Revenue
@@ -128,7 +128,7 @@ ORDER BY Revenue DESC
 LIMIT 10;
 ```
 
-### **4. Customer Ranking by Revenue**
+### 4. Customer Ranking by Revenue
 
 ```sql
 SELECT 
@@ -141,32 +141,32 @@ GROUP BY CustomerID;
 
 ---
 
-## ** Business Insights**
+## Business Insights
 
-### **Sales**
+### Sales
 
 * **UK** generates most revenue, dominating the market
 * Significant **seasonal spikes in November–December** due to holiday sales
 * Customers tend to buy **multiple low-cost items per order**
 
-### **Customers**
+### Customers
 
 * Top 5–10% customers contribute disproportionately to revenue
 * High number of one-time buyers → **retention strategy needed**
 
-### **Products**
+### Products
 
 * Gift and novelty items dominate sales volume
 * Certain stock items show **high return rates** → possible quality issues
 
-### **Operational**
+### Operational
 
 * Cancelled and return transactions form a notable portion of total activity
 * Returns (negative quantities) must be excluded from revenue calculations
 
 ---
 
-## ** Conclusion**
+## Conclusion
 
 This project demonstrates a fully SQL-driven workflow for handling, transforming, and analyzing real-world retail transactional data. It highlights strong capabilities in:
 
