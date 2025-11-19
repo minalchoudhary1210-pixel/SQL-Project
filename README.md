@@ -178,4 +178,4 @@ This project demonstrates a fully SQL-driven workflow for handling, transforming
 * Insight generation
 * Advanced SQL concepts
 
-The results provide clear visibility into customer behavior, product performance, seasonal dynamics, and global market distribution—supporting data-driven decisions in an e-commerce environment.
+The results provide clear visibility into customer behavior, product performance, seasonal dynamics, and global market distribution supporting data-driven decisions in an e-commerce environment.
