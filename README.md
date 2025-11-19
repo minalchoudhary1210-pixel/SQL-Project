@@ -1,5 +1,7 @@
 # SQL-Project
 
+# Kaggle Dataset - https://www.kaggle.com/datasets/tunguz/online-retail
+
 # **E-Commerce Retail Sales Analysis Using SQL**
 
 This project showcases a complete, end-to-end SQL workflow built on a real-world e-commerce retail dataset containing **500,000+ transactions**. It demonstrates data cleaning, transformation, analytics, and advanced SQL engineering techniques to extract meaningful business insights from raw transactional data.
