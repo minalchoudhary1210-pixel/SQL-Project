@@ -5,7 +5,7 @@ CREATE TABLE online_retail_raw (
     StockCode VARCHAR(20),
     Description TEXT,
     Quantity INT,
-    InvoiceDate VARCHAR(30),   -- load as text first (we will clean later)
+    InvoiceDate VARCHAR(30),  
     Price DECIMAL(10,2),
     CustomerID VARCHAR(20),
     Country VARCHAR(50)
